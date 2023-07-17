@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMS</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: chartreuse;
+        }
+        
+        .split {
+            height: 100%;
+            width: 30%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        
+        .split1 {
+            height: 100%;
+            width: 70%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        
+        .left {
+            left: 0;
+            background-color: gray;
+        }
+        
+        .right {
+            right: 0;
+            background-color: white;
+        }
+        
+        .split .div1 {
+            width: 450px;
+            height: 60px;
+            border: 3px solid black;
+            background-color: tomato;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .split .div2 {
+            width: 450px;
+            height: 450px;
+            border: 3px solid black;
+            background-color: tomato;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .split .div1 .title {
+            font-size: 20px;
+        }
+        
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        
+        p {
+            border: 5px solid #555;
+            background-color: grey;
+        }
+        
+        p.small {
+            line-height: 0.7;
+        }
+        
+        img {
+            border: 5px solid #555;
+        }
+        
+        .container1 {
+            background-color: tomato;
+            height: 80px;
+            border: 3px solid black;
+        }
+        
+        .container2 {
+            background-color: grey;
+            height: 200px;
+            border: 3px solid black;
+        }
+        
+        .container2 .title .table,
+        th,
+        tr {
+            width: 1000px;
+            border: solid;
+            text-align: center;
+            background-color: tomato;
+            cursor: pointer;
+        }
+        
+        .container3 {
+            background-color: grey;
+            height: 200px;
+            border: 3px solid black;
+        }
+        
+        .container5 {
+            width: auto height: 430px;
+            border: 3px solid black;
+            background-color: tomato;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .container6 {
+            background-color: grey;
+        }
+        
+        .container6 .row .column {
+            float: left;
+            width: 50%;
+        }
+        /* Clear floats after the columns */
+        
+        .container6 .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="split left">
+        <div class="div1">
+            <span class="icon_2">&nbsp;&nbsp;<img src="lpu.png" width="50" height="50"></span>
+            <span class="title"><b>LOVELY PROFESSIONAL UNIVERSITY</b></span>
+        </div>
+        <center>
+            <h1 style="color:white ;">
+                Student Profile
+            </h1>
+        </center>
+        <div class="div2">
+            <img src="a1.gif" alt="Snow" style="width:150px">
+
+            <h2>Alka Singh</h2>
+            <p>Roll No-RK20*A/B(Term:22*)</p>
+            <p>Group- 2(Section-***)</p>
+            <p>Programme-</p>
+            <p>Books issued from library-0</p>
+            <p>Security Information Brocedure</p>
+        </div>
+    </div>
+    <div class="split1 right">
+        <section class="container">
+            <center>
+                <h1 style="color: black"><b>UNIVERSITY MANAGEMENT SYSTEM</b></h1>
+            </center>
+        </section><br>
+        <section class="container1">
+            <div class="button_1"><br>
+                <center>
+                    &nbsp;&nbsp;&nbsp; <button><a href="ums3.html">Home</a></button> &nbsp;&nbsp;&nbsp;
+                    <button><a href="umstime.html" target="_blank">Timetable</a></button>&nbsp;&nbsp;&nbsp;
+                    <button><a href="ums3exam.html" target="_blank">Examination system</a></button>&nbsp;&nbsp;&nbsp;
+                    <button><a href="Change Password">Change Password  </a></button>&nbsp;&nbsp;&nbsp;
+
+                    <button> <a href="umslogin.html" </a>Log Out</a></button></center>
+                <br> </div>
+        </section>
+        <br><br>
+        <section class="container3">
+            <div class="timetable">
+                <h1>Today's Timetable</h1>
+                <center>
+                    <table>
+                        <tr>
+                            <th>
+                                Time
+                            </th>
+                            <td>
+                                <th>
+                                    Course
+                                </th>
+                            </td>
+                            <td>
+                                <th>
+                                    Room NO.
+                                </th>
+                            </td>
+                            <td>
+                                <th>
+                                    Att status
+                                </th>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                10:00-11:00
+                            </th>
+                            <td>
+                                <th>
+                                    CSE 202
+                                </th>
+                            </td>
+                            <td>
+                                <th>
+                                    Block-B 101
+                                </th>
+                            </td>
+                            <td>
+                                <th>
+                                    Not Marked
+                                </th>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                11:00-12:00
+                            </th>
+                            <td>
+                                <th>
+                                    PHY 109
+                                </th>
+                            </td>
+                            <td>
+                                <th>
+                                    Block-B 101
+                                </th>
+                            </td>
+                            <td>
+                                <th>
+                                    Not Marked
+                                </th>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                14:00-15:00
+                            </th>
+                            <td>
+                                <th>
+                                    PEL 121
+                                </th>
+                            </td>
+                            <td>
+                                <th>
+                                    Block-B 102
+                                </th>
+                            </td>
+                            <td>
+                                <th>
+                                    Not Marked
+                                </th>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                15:00-16:00
+                            </th>
+                            <td>
+                                <th>
+                                    ECE 213
+                                </th>
+                            </td>
+                            <td>
+                                <th>
+                                    Block-B 110
+                                </th>
+                            </td>
+                            <td>
+                                <th>
+                                    Not Marked
+                                </th>
+                            </td>
+                        </tr>
+
+                </center>
+                </table>
+            </div>
+
+        </section>
+        <br><br>
+        <section class="container2">
+            <div class="title">
+                <h1> MY COURSES & ATTENDANCE</h1>
+                <table>
+                    <tr>
+                        <th>
+                            Roll NO.
+                        </th>
+                        <td>
+                            <th>
+                                Subject
+                            </th>
+                        </td>
+
+                        <td>
+                            <th>
+                                Percentage
+                            </th>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            RK20*A/B
+                        </th>
+                        <td>
+                            <th>
+                                CSE 202
+                            </th>
+                        </td>
+
+                        <td>
+                            <th>
+                                0%
+                            </th>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            RK20*A/B
+                        </th>
+                        <td>
+                            <th>
+                                PHY109
+                            </th>
+                        </td>
+
+                        <td>
+                            <th>
+                                0%
+                            </th>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            RK20*A/B
+                        </th>
+                        <td>
+                            <th>
+                                PEL 121
+                            </th>
+                        </td>
+
+                        <td>
+                            <th>
+                                0%
+                            </th>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            RK20*A/B
+                        </th>
+                        <td>
+                            <th>
+                                ECE213
+                            </th>
+                        </td>
+
+                        <td>
+                            <th>
+                                0%
+                            </th>
+                        </td>
+                    </tr>
+                    </center>
+                </table>
+            </div>
+        </section>
+        <br>
+        <section class="container6">
+            <div class="row">
+                <div class="column">
+                    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Messages &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button>
+                    <a href="View ALL">View All</a>
+                </button>
+                    </h1>
+                    <div class="mydiv">
+                        <center>
+                            <div style=" width: 80%; height: 300px;  border: 1px solid black; background-color:white ">
+                                <br><br> <br><br><br><br><br>
+                                <center>
+                                    <p1>No Message to display</p1>
+                                </center>
+
+                            </div>
+                        </center>
+                    </div>
+                </div>
+                <div class="column">
+                    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Teachers on leave</h1>
+                    <div class="mydiv1">
+                        <center>
+                            <div style=" width: 80%; height: 300px;  border: 1px solid black; background-color: white">
+                                <br><br> <br><br><br><br><br>
+                                <center>
+                                    <p1>No Teacher on leave</p1>
+                                </center>
+
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </section>
+        <br><br>
+        <section class="container5">
+            <center>
+                <div class="div4">
+                    <dib class="title_1">
+                        <center>
+                            <h1>
+                                Announcements
+                            </h1>
+                            Webinar on Vehicle Dynamic by Industry Expert Apr 16,2021 Student Research and Project Cell-DSW in association with Elite Techno Groups presents webinar on Vehicle Dynamics by Industry Expert. In this webinar you will learn the basics of the Vehicle Dynamics
+                            Blockset (VDBS) and delve into some of the example models. We will present how to use the Unreal Engine to visualize and compare results in an intuitive manner. After exploring the blocks included in the VDBS and the example
+                            models, you will learn how to customize these examples to easily optimize an anti-lock braking system for split road driving conditions and how to effectively show the results of the optimized controller. Lastly, we will explore
+                            some of the other ways to use VDBS to accelerate the pace of development within automotive and automated driving industries. Resource Person: Mr Arbaz Shaikh, Vehicle Dynamics Research Expert, ETG, CFI Register at: https://bit.ly/3mqdKUq
+                            Registration Fee: Free Webinar Date: 18th April (Sunday) Timing: 11:30 AM Onwards Certificate will be provided to the participants by the Industry Uploaded By: Dr. Sorabh Lakhanpal Division of Student Welfare *This is computer
+                            generated notice, not requiring signature
+                        </center>
+                        <button><a href="View">View All Announcements</a></button>
+                    </dib>
+            </center>
+            </div>
+        </section>
+    </div>
+</body>
